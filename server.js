@@ -25,15 +25,6 @@ const io = new Server(server, {
 app.use('/laundries', laundryRouter);
 app.use('/dryers', dryerRouter);
 
-app.get('*', (req, res) => {
-	res.status(404).json({
-		status: 'fail',
-		data: {
-			resource: 'Not found',
-		},
-	});
-});
-
 io.on('connection', (socket) => {
 	console.log('SOCKET Connected:');
 	socket.on('send_laundry_list', (waitingList) => {
