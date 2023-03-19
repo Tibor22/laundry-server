@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
 	cors: {
-		origin: 'https://laundry-app-caledonian-hzk8bmrgo-tibor22.vercel.app',
+		origin: 'https://laundry-app-git-main-tibor22.vercel.app',
 		methods: ['GET', 'POST', 'DELETE'],
 	},
 });
