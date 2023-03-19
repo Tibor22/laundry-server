@@ -1,4 +1,4 @@
-import Laundry from '../models/Laundry.model.js';
+import Laundry from '../models/laundry.model.js';
 
 export const getLaundry = async (req, res) => {
 	const laundryList = await Laundry.getLaundries();
